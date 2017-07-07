@@ -11,5 +11,4 @@ import {DateTimePickerDirective} from './datetimepicker.directive';
     ],
     exports: [DateTimePickerDirective]
 })
-export class A2Edatetimepicker {
-}
+export class A2EDateTimePickerModule { }
