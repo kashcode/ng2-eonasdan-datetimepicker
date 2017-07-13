@@ -1,2 +1,2 @@
-export declare class A2Edatetimepicker {
+export declare class A2EDateTimePickerModule {
 }

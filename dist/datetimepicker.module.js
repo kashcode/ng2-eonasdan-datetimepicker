@@ -9,20 +9,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
 var datetimepicker_directive_1 = require("./datetimepicker.directive");
-var A2Edatetimepicker = (function () {
-    function A2Edatetimepicker() {
+var A2EDateTimePickerModule = (function () {
+    function A2EDateTimePickerModule() {
     }
-    A2Edatetimepicker = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-            ],
-            declarations: [
-                datetimepicker_directive_1.DateTimePickerDirective
-            ],
-            exports: [datetimepicker_directive_1.DateTimePickerDirective]
-        })
-    ], A2Edatetimepicker);
-    return A2Edatetimepicker;
+    return A2EDateTimePickerModule;
 }());
-exports.A2Edatetimepicker = A2Edatetimepicker;
+A2EDateTimePickerModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            platform_browser_1.BrowserModule,
+        ],
+        declarations: [
+            datetimepicker_directive_1.DateTimePickerDirective
+        ],
+        exports: [datetimepicker_directive_1.DateTimePickerDirective]
+    })
+], A2EDateTimePickerModule);
+exports.A2EDateTimePickerModule = A2EDateTimePickerModule;

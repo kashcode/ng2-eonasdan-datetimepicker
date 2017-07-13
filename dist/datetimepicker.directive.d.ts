@@ -1,3 +1,4 @@
+/// <reference types="moment" />
 import { ElementRef, Renderer, OnInit, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { SetOptions } from 'eonasdan-bootstrap-datetimepicker';
 import * as moment from 'moment';

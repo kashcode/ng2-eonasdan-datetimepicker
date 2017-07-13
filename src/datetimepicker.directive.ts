@@ -10,7 +10,7 @@ import {
     SimpleChanges
 } from '@angular/core';
 import * as $ from 'jquery';
-import {SetOptions} from 'eonasdan-bootstrap-datetimepicker';
+import { SetOptions } from 'eonasdan-bootstrap-datetimepicker';
 import * as moment from 'moment';
 
 @Directive({
@@ -24,7 +24,7 @@ export class DateTimePickerDirective implements OnInit, OnChanges {
     @Output() onChange: EventEmitter<moment.Moment> = new EventEmitter<moment.Moment>();
     @Output() onClick: EventEmitter<any> = new EventEmitter<any>();
 
-    private dpElement;
+    private dpElement: any;
 
     constructor(el: ElementRef, renderer: Renderer) {
         let $parent = $(el.nativeElement.parentNode);
@@ -35,7 +35,7 @@ export class DateTimePickerDirective implements OnInit, OnChanges {
         this.dpElement.datetimepicker(this.options);
         this.dpElement.data('DateTimePicker').date(this.date);
 
-        this.dpElement.on('dp.change', (e) => {
+        this.dpElement.on('dp.change', (e: any) => {
             if (e.date !== this.date) {
                 this.date = e.date;
                 this.onChange.emit(e.date);
